@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>2017.8.24</display-name>
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>doLogin</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>doLogin</servlet-name>
+  <url-pattern>/util/do_login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>doTopic</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToTopic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>doTopic</servlet-name>
+  <url-pattern>/topic/do_topic</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>topicController</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.TopicController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>topicController</servlet-name>
+  <url-pattern>/topic/topicController</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+  <servlet-name>toAddNews</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToAddNews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>toAddNews</servlet-name>
+  <url-pattern>/topic/to_add_news</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>newsController</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.NewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>newsController</servlet-name>
+  <url-pattern>/topic/newsController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>to_index</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToIndex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>to_index</servlet-name>
+  <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>to_news_modify</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToNewsModify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>to_news_modify</servlet-name>
+  <url-pattern>/topic/to_news_modify</url-pattern>
+  </servlet-mapping> 
+ 
+  <servlet>
+  <servlet-name>to_news_update</servlet-name>
+  <servlet-class>cn.jbit.news.servlet.ToNewsUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>to_news_update</servlet-name>
+  <url-pattern>/topic/to_news_update</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>
